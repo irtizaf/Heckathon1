@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux"
 import { AppDispatch, RootState } from '@/app/store'
 import { fetchCartData } from '@/app/counter/counterSlice';
-import { toast } from 'react-hot-toast';
+import { BASE_PATH } from '@/lib/basepath';
 
 const detail = async (param: any) => {
   const bac = `${param}`;
@@ -50,7 +50,7 @@ const Page = ({ params }: { params: { slugs: string } }) => {
 
   const postContent = async (item: any) => {
     const UUID = generateRandomNumber();
-    const request = await fetch("http://localhost:3000/api/cart", {
+    const request = await fetch(`${BASE_PATH}/api/cart`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
