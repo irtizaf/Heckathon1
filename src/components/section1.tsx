@@ -27,7 +27,7 @@ const Section1 = () => {
                 <div className='tablet:flex justify-between gap-5'>
                     <div className='bg-[#efe1c7] p-5 h-96  w-72'>
                         <p>Flex Sweatshirt</p>
-                        <p className='flex '><p className='line-through'>$100.00</p> <h1 className='pl-5 font-bold'>$75.00</h1></p>
+                        <p className='flex '><p className='line-through'>$100.00</p> <h1 className=' font-bold'>$75.00</h1></p>
                         <Image
                         width={100}
                         height={100}
@@ -35,7 +35,7 @@ const Section1 = () => {
                     </div>
                     <div className='bg-[#d7d7d9] mobile:mt-5 tablet:mt-0 p-5 h-96  w-72'>
                         <p>Flex Push Button Bomber</p>
-                        <p className='flex '><p className='line-through'>$100.00</p> <h1 className='pl-5 font-bold'>$75.00</h1></p>
+                        <p className='flex '><p className='line-through'>$100.00</p> <h1 className=' font-bold'>$75.00</h1></p>
                         <Image
                         width={100}
                         height={100}

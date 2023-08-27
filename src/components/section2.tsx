@@ -6,7 +6,7 @@ const Section2 = () => {
         <div>
             <div className='grid tablet:grid-cols-2  mobile:grid-cols-1 tablet:px-20 mobile:px-10 tablet:mt-60 mobile:mt-20 bg-[#fbfcff]'>
                 <div className=' mt-32'>
-                    <div className='font-[800] tablet:w-[40%] small:text-[5.87rem] mobile:text-[2.87rem] h-32 absolute text-[#212121] opacity-[0.07] z-10'>
+                    <div className='font-[700] tablet:w-[40%] small:text-[5.87rem] mobile:text-[2.87rem] h-32 absolute text-[#212121] opacity-[0.07] z-10'>
                         <h1>Different from others</h1>
                     </div>
                     <div className='grid small:grid-cols-2  mobile:grid-cols-1 gap-y-10'>

@@ -93,17 +93,17 @@ const Page = ({ params }: { params: { slugs: string } }) => {
         <h1>{item.price}</h1>
         <h1>{item.subCategory}</h1> */}
           <div>
-            <div className=' tablet:flex small:flex gap-5 tablet:justify-center mobile:ml-10 table:ml-0 py-20 '>
+            <div className=' tablet:flex small:flex gap-5 tablet:justify-center mobile:ml-10 table:ml-0 py-10 '>
               <div>
                 <img className='tablet:w-[100px] mobile:hidden small:hidden small:w-[50px]' src={item.image} />
               </div>
               <div>
-                <img className='tablet:w-[500px] mobile:w-[200px]' src={item.image} />
+                <img className='tablet:w-[400px] mobile:w-[200px]' src={item.image} />
               </div>
               <div>
-                <h1 className='tablet:text-3xl small:text-2xl mobile:text-lg mobile:mt-0 tablet:mt-20'>{item.name}</h1>
+                <h1 className='tablet:text-3xl font-bold small:text-2xl mobile:text-lg mobile:mt-0 tablet:mt-10'>{item.name}</h1>
                 <p className='text-gray-400 text-xl'>{item.subCategory}</p>
-                <h2 className='text-sm tablet:pt-5 font-bold'>SELECT SIZE</h2>
+                <h2 className='text-md tablet:pt-5 font-bold'>SELECT SIZE</h2>
                 <div className='flex justify-around w-56 tablet:py-4'>
                   <div className='font-bold text-gray-600 w-8 h-8 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white ' onClick={() => { return xs("XS") }}>XS</div>
                   <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white' onClick={() => { return xs("S") }}>S</div>
@@ -112,20 +112,20 @@ const Page = ({ params }: { params: { slugs: string } }) => {
                   <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white ' onClick={() => { return xs("XL") }}>XL</div>
                 </div>
                 <div className='flex'>
-                  <h1 className='font-bold mt-4 '>Quantity:</h1>
-                  <div className='flex space-x-4 ml-5 '>
+                  <h1 className='font-bold mt-4 text-xl '>Quantity:</h1>
+                  <div className='flex space-x-4 ml-5 mt-2'>
                     <button onClick={increment} className='text-2xl  rounded-full w-10 h-10 shadow-lg'>+</button>
                     <p className='text-xl mt-2'> {count}</p>
                     <button onClick={decrement} className='text-2xl  rounded-full w-10 h-10 shadow-lg'>-</button>
                   </div>
                 </div>
                 <div className='flex tablet:mt-10 mobile:mt-3 '>
-                  <button className='tablet:w-44 mobile:w-36  h-10 text-white bg-black rounded-lg text-center font-bold ' onClick={() => postContent(item)}>
+                  <button className='tablet:w-44 mobile:w-36  h-10 text-white bg-black rounded-lg text-center font-bold py-2' onClick={() => postContent(item)}>
                     {!userId ? (<Link href={"/sign-in"}>sign-in</Link>) : ("add to cart")}
                   </button>
 
                 </div>
-                <h1 className='font-bold tablet:text-2xl mobile:text-lg pl-5 px-3'>${item.price}</h1>
+                <h1 className='font-bold tablet:text-2xl mobile:text-lg pl-5 py-3 px-3'>${item.price}</h1>
               </div>
 
             </div>
